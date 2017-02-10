@@ -1,3 +1,27 @@
+
+# Index
+Software | Links to help site
+------------ | -------------
+Redshift | [link](google.com)
+Github | [link](google.com)
+ZSh | [link](google.com)
+htop | [link](google.com)
+Nemo File Explorer | [link](google.com)
+Terminator | [link](google.com)
+Pulse Audio | [link](google.com)
+Pycharm | [link](google.com)
+Sublime Text 3 | [link](google.com)
+Spring STS | [link](google.com)
+Eclipse | [link](google.com)
+Geany | [link](google.com)
+MongoDB | [link](google.com)
+Redis | [link](google.com)
+Mysql | [link](google.com)
+Elasticsearch | [link](google.com)
+Google Chrome | [link](google.com)
+Java | [link](google.com)
+
+
 # Redhsift installation:
 ```shell
 sudo apt-get gtk-redshift
@@ -74,25 +98,3 @@ Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-t
 ```shell
 sudo apt-get install htop
 ```
-
-# Index
-Software | Links to help site
------------- | -------------
-Redshift | Content column 2
-Github | Content column 2
-ZSh | Content column 2
-htop | Content column 2
-Nemo File Explorer | Content cell 2
-Terminator | Content column 2 
-Pulse Audio | Content column 2
-Pycharm | Content column 2
-Sublime Text 3 | Content column 2
-Spring STS | Content column 2
-Eclipse | Content column 2
-Geany | Content column 2
-MongoDB | Content column 2
-Redis | Content column 2
-Mysql | Content column 2
-Elasticsearch | Content column 2
-Google Chrome | Content column 2
-Java | Content column 2
