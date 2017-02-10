@@ -2,24 +2,24 @@
 # Index
 Software | Links to help site
 ------------ | -------------
-Redshift | [link](google.com)
-Github | [link](google.com)
-ZSh | [link](google.com)
-htop | [link](google.com)
-Nemo File Explorer | [link](google.com)
-Terminator | [link](google.com)
-Pulse Audio | [link](google.com)
-Pycharm | [link](google.com)
-Sublime Text 3 | [link](google.com)
-Spring STS | [link](google.com)
-Eclipse | [link](google.com)
-Geany | [link](google.com)
-MongoDB | [link](google.com)
-Redis | [link](google.com)
-Mysql | [link](google.com)
-Elasticsearch | [link](google.com)
-Google Chrome | [link](google.com)
-Java | [link](google.com)
+Redshift | [link](https://encrypted.google.com/)
+Github | [link](https://encrypted.google.com/)
+ZSh | [link](https://encrypted.google.com/)
+htop | [link](https://encrypted.google.com/)
+Nemo File Explorer | [link](https://encrypted.google.com/)
+Terminator | [link](https://encrypted.google.com/)
+Pulse Audio | [link](https://encrypted.google.com/)
+Pycharm | [link](https://encrypted.google.com/)
+Sublime Text 3 | [link](https://encrypted.google.com/)
+Spring STS | [link](https://encrypted.google.com/)
+Eclipse | [link](https://encrypted.google.com/)
+Geany | [link](https://encrypted.google.com/)
+MongoDB | [link](https://encrypted.google.com/)
+Redis | [link](https://encrypted.google.com/)
+Mysql | [link](https://encrypted.google.com/)
+Elasticsearch | [link](https://encrypted.google.com/)
+Google Chrome | [link](https://encrypted.google.com/)
+Java | [link](https://encrypted.google.com/)
 
 
 # Redhsift installation:
@@ -90,7 +90,7 @@ Use source to enable zsh or change shell using:
 ```shell
 chsh -s `which zsh`
 ```
-[Official Github repo](https://github.com/robbyrussell/oh-my-zsh)	
+Official Github repo for [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)	
 Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes)	
 *Restart if required.* 	
 
