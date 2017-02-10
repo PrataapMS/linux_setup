@@ -2,10 +2,10 @@
 # Index
 Software | Links to help site
 ------------ | -------------
-Redshift | [link](https://encrypted.google.com/)
-Github | [link](https://encrypted.google.com/)
-ZSh | [link](https://encrypted.google.com/)
-htop | [link](https://encrypted.google.com/)
+[Redshift](#redshift) | [link](https://encrypted.google.com/)
+[Github](#git) | [link](https://encrypted.google.com/)
+[ZSh](#zsh) | [link](https://encrypted.google.com/)
+[htop](#htop) | [link](https://encrypted.google.com/)
 Nemo File Explorer | [link](https://encrypted.google.com/)
 Terminator | [link](https://encrypted.google.com/)
 Pulse Audio | [link](https://encrypted.google.com/)
@@ -22,7 +22,7 @@ Google Chrome | [link](https://encrypted.google.com/)
 Java | [link](https://encrypted.google.com/)
 
 
-# Redhsift installation:
+# Redhshift installation: <a name="redshift"></a>
 ```shell
 sudo apt-get gtk-redshift
 gtk-redshift -l 2.97:77.59
@@ -52,7 +52,7 @@ crontab -e
 redshift -h
 ```
 
-# Install Git in terminal
+# Install Git in terminal <a name="git"></a>
 ```shell
 sudo apt-get update
 sudo apt-get install git
@@ -72,7 +72,7 @@ git config --global credential.helper "cache --timeout=3600"
 
 ```
 
-# Install ZSH shell
+# Install ZSH shell <a name="zsh"></a>
 
 ```shell
 apt-get install zsh
@@ -94,7 +94,7 @@ Official Github repo for [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes)	
 *Restart if required.* 	
 
-# Install htop
+# Install htop  <a name="htop"></a>
 ```shell
 sudo apt-get install htop
 ```
