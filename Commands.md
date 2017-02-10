@@ -28,7 +28,7 @@ crontab -e
 redshift -h
 ```
 
-# Git install in terminal
+# Install Git in terminal
 ```shell
 sudo apt-get update
 sudo apt-get install git
@@ -48,16 +48,29 @@ git config --global credential.helper "cache --timeout=3600"
 
 ```
 
-# ZSH
+# Install ZSH shell
 
 ```shell
 apt-get install zsh
 apt-get install git-core
-
+```
+Then download and install oh-my-zsh for customization using:
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-																**OR**
+			**OR**
 ```shell
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
+Use source to enable zsh or change shell using:
+```shell
+chsh -s `which zsh`
+```
+[Official Github repo](https://github.com/robbyrussell/oh-my-zsh)
+Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes)
+*Restart if required.*
+
+First Header | Second Header
+------------ | -------------
+Content cell 1 | Content cell 2
+Content column 1 | Content column 2
