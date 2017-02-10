@@ -13,11 +13,13 @@ Pycharm | [link](https://encrypted.google.com/)
 Sublime Text 3 | [link](https://encrypted.google.com/)
 Spring STS | [link](https://encrypted.google.com/)
 Eclipse | [link](https://encrypted.google.com/)
+Anaconda | [link](https://encrypted.google.com/)
 Geany | [link](https://encrypted.google.com/)
 MongoDB | [link](https://encrypted.google.com/)
 Redis | [link](https://encrypted.google.com/)
 Mysql | [link](https://encrypted.google.com/)
 Elasticsearch | [link](https://encrypted.google.com/)
+Tensorflow | [link](https://encrypted.google.com/)
 Google Chrome | [link](https://encrypted.google.com/)
 Java | [link](https://encrypted.google.com/)
 
@@ -84,9 +86,7 @@ apt-get install git-core
 Then download and install oh-my-zsh for customization using:
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-**OR**	
-```shell
+**------OR------**	
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 Use source to enable zsh or change shell using:
@@ -101,4 +101,5 @@ Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-t
 # Install htop  
 ```shell
 sudo apt-get install htop
+sudo apt install htop
 ```
