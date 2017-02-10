@@ -1,2 +1,3 @@
-# ubuntu_setup
-Personalized
+#Ubuntu Setup 
+###Commands to install required apps
+###Personalized apps
