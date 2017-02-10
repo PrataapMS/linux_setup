@@ -1,7 +1,12 @@
+# Redhsift installation:
+```bash
 sudo apt-get gtk-redshift
 gtk-redshift -l 2.97:77.59
+```
 
 ## Crontab
+
+*Not necessary to setup crontab, use incase auto start option is not available*
 
 **To see the list with the programs you can type**
 ```bash
