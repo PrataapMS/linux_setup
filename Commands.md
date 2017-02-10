@@ -22,7 +22,8 @@ Google Chrome | [link](https://encrypted.google.com/)
 Java | [link](https://encrypted.google.com/)
 
 
-# Redhshift installation: <a name="redshift"></a>
+<a name="redshift"></a>
+# Redhshift installation: 
 ```shell
 sudo apt-get gtk-redshift
 gtk-redshift -l 2.97:77.59
@@ -52,7 +53,8 @@ crontab -e
 redshift -h
 ```
 
-# Install Git in terminal <a name="git"></a>
+<a name="git"></a>
+# Install Git in terminal 
 ```shell
 sudo apt-get update
 sudo apt-get install git
@@ -72,7 +74,8 @@ git config --global credential.helper "cache --timeout=3600"
 
 ```
 
-# Install ZSH shell <a name="zsh"></a>
+<a name="zsh"></a>
+# Install ZSH shell 
 
 ```shell
 apt-get install zsh
@@ -94,7 +97,8 @@ Official Github repo for [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes)	
 *Restart if required.* 	
 
-# Install htop  <a name="htop"></a>
+<a name="htop"></a>
+# Install htop  
 ```shell
 sudo apt-get install htop
 ```
