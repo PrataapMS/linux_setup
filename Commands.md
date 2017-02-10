@@ -70,13 +70,29 @@ chsh -s `which zsh`
 Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes)	
 *Restart if required.* 	
 
-Software | Command to install
+# Install htop
+```shell
+sudo apt-get install htop
+```
+
+# Index
+Software | Links to help site
 ------------ | -------------
+Redshift | Content column 2
+Github | Content column 2
+ZSh | Content column 2
+htop | Content column 2
 Nemo File Explorer | Content cell 2
 Terminator | Content column 2 
 Pulse Audio | Content column 2
 Pycharm | Content column 2
+Sublime Text 3 | Content column 2
+Spring STS | Content column 2
+Eclipse | Content column 2
+Geany | Content column 2
 MongoDB | Content column 2
 Redis | Content column 2
 Mysql | Content column 2
 Elasticsearch | Content column 2
+Google Chrome | Content column 2
+Java | Content column 2
