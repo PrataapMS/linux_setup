@@ -66,9 +66,9 @@ Use source to enable zsh or change shell using:
 ```shell
 chsh -s `which zsh`
 ```
-[Official Github repo](https://github.com/robbyrussell/oh-my-zsh)
-Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes)
-*Restart if required.*
+[Official Github repo](https://github.com/robbyrussell/oh-my-zsh)	
+Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes)	
+*Restart if required.* 	
 
 First Header | Second Header
 ------------ | -------------
