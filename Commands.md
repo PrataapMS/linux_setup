@@ -58,7 +58,7 @@ Then download and install oh-my-zsh for customization using:
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-			**OR**
+**OR**	
 ```shell
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
@@ -70,7 +70,14 @@ chsh -s `which zsh`
 Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes)	
 *Restart if required.* 	
 
-First Header | Second Header
+Software | Command to install
 ------------ | -------------
-Content cell 1 | Content cell 2
-Content column 1 | Content column 2
+Nemo File Explorer | Content cell 2
+Terminator | Content column 2 | Test column
+Hello Test
+Pulse Audio | Content column 2
+Pycharm | Content column 2
+MongoDB | Content column 2
+Redis | Content column 2
+Mysql | Content column 2
+Elasticsearch | Content column 2
