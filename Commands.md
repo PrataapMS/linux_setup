@@ -73,8 +73,7 @@ Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-t
 Software | Command to install
 ------------ | -------------
 Nemo File Explorer | Content cell 2
-Terminator | Content column 2 | Test column
-Hello Test
+Terminator | Content column 2 
 Pulse Audio | Content column 2
 Pycharm | Content column 2
 MongoDB | Content column 2
