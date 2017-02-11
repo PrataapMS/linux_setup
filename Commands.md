@@ -103,3 +103,4 @@ Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-t
 sudo apt-get install htop
 sudo apt install htop
 ```
+
