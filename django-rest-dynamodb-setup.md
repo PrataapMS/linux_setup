@@ -5,18 +5,16 @@
 Follow this link to find the latest document of required, else follow as below
 <http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html#DynamoDBLocal.DownloadingAndRunning>
 
-+ Download DynamoDB for free using this link and extract:
-<https://s3.ap-south-1.amazonaws.com/dynamodb-local-mumbai/dynamodb_local_latest.tar.gz>
++ Download DynamoDB for free using this link and extract
+  <https://s3.ap-south-1.amazonaws.com/dynamodb-local-mumbai/dynamodb_local_latest.tar.gz>
 
-+ Run the server using this command on terminal from the extracted directory
++ Run the server using this command on terminal from the extracted directory 
 ```bash
     java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
 
 ###### Important
-```
-DynamoDB on your computer requires the Java Runtime Environment (JRE) version 6.x or newer; it will not run on older JRE versions.
-```
+> DynamoDB on your computer requires the Java Runtime Environment (JRE) version 6.x or newer; it will not run on older JRE versions.
 
 ##### Command Line Options
 
@@ -39,3 +37,9 @@ DynamoDB running on your computer accepts the following command line options:
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -help
 ```
 + -sharedDb — DynamoDB will use a single database file, instead of using separate files for each credential and region. If you specify -sharedDb, all DynamoDB clients will interact with the same set of tables regardless of their region and credential configuration.
+
+
+##### AWS Command Line Interface
+```bash
+    aws dynamodb list-tables --endpoint-url http://localhost:8000
+```
