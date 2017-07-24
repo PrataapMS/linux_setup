@@ -133,3 +133,41 @@ dynamodb = boto3.resource('dynamodb', region_name='us-west-2', endpoint_url="htt
 > <http://boto.readthedocs.io/en/latest/dynamodb_tut.html>\
 
  
+---
+
+### PynamoDB Usage and setup
+
+**Note:**
+> For local setup add meta attribute host = "http://localhost:8009". That is the port you are running dynamodb on. Refer: <http://pynamodb.readthedocs.io/en/latest/local.html>
+
+
+> Follow this for quicksetup from official documentation <http://pynamodb.readthedocs.io/en/latest/quickstart.html>
+
+```python
+from pynamodb.models import Model
+from pynamodb.attributes import UnicodeAttribute
+
+class UserModel(Model):
+    """
+    A DynamoDB User
+    """
+    class Meta:
+        table_name = 'dynamodb-user'
+        region = 'us-west-1'
+        host = "http://localhost:8009" # only for local setup
+    email = UnicodeAttribute(hash_key=True)
+    first_name = UnicodeAttribute()
+    last_name = UnicodeAttribute()
+```
+
+> Create the table
+
+```python
+UserModel.create_table(read_capacity_units=1, write_capacity_units=1)
+```
+
+> Create a user
+
+```python
+user = UserModel('test@example.com', first_name='Samuel', last_name='Adams')
+```
