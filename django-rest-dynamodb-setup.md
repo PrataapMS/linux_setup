@@ -1,5 +1,55 @@
 # Guide to setup Django-Rest server and DynamoDB
 
+## Django-Rest API setup
+
+Let's take a look at a quick example of using REST framework to build a simple model-backed API for accessing users and groups.
+
+Startup up a new project like so...
+```bash
+$ pip install django
+$ pip install djangorestframework
+$ django-admin.py startproject example .
+$ ./manage.py migrate
+$ ./manage.py createsuperuser
+Username (leave blank to use 'prataap'): prataap
+Email address: prataap@gmail.com
+Password: django12345
+```
+
+Now edit the example/urls.py module in your project:
+```python
+from django.conf.urls import url, include
+from django.contrib.auth.models import User
+from rest_framework import serializers, viewsets, routers
+
+# Serializers define the API representation.
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = User
+        fields = ('url', 'username', 'email', 'is_staff')
+
+
+# ViewSets define the view behavior.
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+
+# Routers provide a way of automatically determining the URL conf.
+router = routers.DefaultRouter()
+router.register(r'users', UserViewSet)
+
+
+# Wire up our API using automatic URL routing.
+# Additionally, we include login URLs for the browsable API.
+urlpatterns = [
+    url(r'^', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+]
+```
+
+---
+
 ## DynamoDB Setup
 
 Follow this link to find the latest document of required, else follow as below
@@ -10,9 +60,13 @@ Follow this link to find the latest document of required, else follow as below
 
 + Run the server using this command on terminal from the extracted directory 
 ```bash
-    java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
+$ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
 
++ I use this command
+```bash
+$ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -inMemory -port 8008
+```
 ###### Important
 > DynamoDB on your computer requires the Java Runtime Environment (JRE) version 6.x or newer; it will not run on older JRE versions.
 
@@ -33,13 +87,49 @@ DynamoDB running on your computer accepts the following command line options:
 
 ###### Note
 + DynamoDB uses port 8000 by default. If port 8000 is unavailable, this command will throw an exception. You can use the -port option to specify a different port number. For a complete list of DynamoDB runtime options, including -port , type this command:
-```
-java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -help
+```bash
+$ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -help
 ```
 + -sharedDb — DynamoDB will use a single database file, instead of using separate files for each credential and region. If you specify -sharedDb, all DynamoDB clients will interact with the same set of tables regardless of their region and credential configuration.
 
 
 ##### AWS Command Line Interface
+ - To check the tables in dynamodb
 ```bash
-    aws dynamodb list-tables --endpoint-url http://localhost:8000
+$ aws dynamodb list-tables --endpoint-url http://localhost:8000
 ```
+
+##### Install AWS CLI using pip and configure settings
+```bash
+$ pip install --upgrade awscli
+$ aws configure
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+Default region name [None]: us-west-2
+Default output format [None]: ENTER
+```
+
+##### Install BOTO3
+```bash
+$ pip install boto3
+```
+
+> Follow this for reference https://aws.amazon.com/sdk-for-python/
+
+> Follow this to Setup and use DynamoDB from python 
+> <http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.Python.html>
+
+
+```python
+import boto3
+
+dynamodb = boto3.resource('dynamodb', region_name='us-west-2', endpoint_url="http://localhost:8000")
+```
+
+> Check developer documentation for DynamoDB here:
+> <http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SampleData.CreateTables.html>
+
+> Also check this for more documentation or tutorial for DynamoDB
+> <http://boto.readthedocs.io/en/latest/dynamodb_tut.html>\
+
+ 
