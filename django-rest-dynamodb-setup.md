@@ -63,9 +63,9 @@ Follow this link to find the latest document of required, else follow as below
 $ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
 
-+ I use this command
++ I use this command, so that the port does not conflict with my django server or any others.
 ```bash
-$ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -inMemory -port 8008
+$ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -inMemory -port 8009
 ```
 ###### Important
 > DynamoDB on your computer requires the Java Runtime Environment (JRE) version 6.x or newer; it will not run on older JRE versions.
@@ -171,3 +171,5 @@ UserModel.create_table(read_capacity_units=1, write_capacity_units=1)
 ```python
 user = UserModel('test@example.com', first_name='Samuel', last_name='Adams')
 ```
+
+> Follow this indepth tutorial on PynamoDB: <http://pynamodb.readthedocs.io/en/latest/tutorial.html>
