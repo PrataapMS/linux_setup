@@ -143,6 +143,21 @@ dynamodb = boto3.resource('dynamodb', region_name='us-west-2', endpoint_url="htt
 
 > Follow this for quicksetup from official documentation <http://pynamodb.readthedocs.io/en/latest/quickstart.html>
 
+> Quickly setup and checkout example programs here
+> 
+```bash
+$ pip install pynamodb
+#### Getting the examples
+$ git clone https://github.com/pynamodb/PynamoDB.git
+#### Configuring the examples
+####  Change the port mentioned in to model to what you are running the DynanoDB on
+$ cd pynamodb/examples
+#### Running an example
+$ python model.py
+```
+
+- This is how the model for a table is created using PynamoDB library
+
 ```python
 from pynamodb.models import Model
 from pynamodb.attributes import UnicodeAttribute
@@ -160,16 +175,27 @@ class UserModel(Model):
     last_name = UnicodeAttribute()
 ```
 
-> Create the table
+- Create the table
 
 ```python
 UserModel.create_table(read_capacity_units=1, write_capacity_units=1)
 ```
 
-> Create a user
+- Create a user
 
 ```python
 user = UserModel('test@example.com', first_name='Samuel', last_name='Adams')
+```
+
+- Connect to the table created using this below (Given in [example](https://github.com/pynamodb/PynamoDB/tree/master/examples) )
+
+```python
+from pynamodb.connection import TableConnection
+table = TableConnection('Thread', host='http://localhost:8000')
+print(table.describe_table())
+print(table.get_item('hash-key', 'range-key'))
+table.put_item('hash-key', 'range-key', attributes={'forum_name': 'value'})
+table.delete_item('hash-key', 'range-key')
 ```
 
 > Follow this indepth tutorial on PynamoDB: <http://pynamodb.readthedocs.io/en/latest/tutorial.html>
