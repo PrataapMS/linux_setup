@@ -6,6 +6,7 @@ Software | Links to help site
 [Github](#git) | [link](https://encrypted.google.com/)
 [ZSh](#zsh) | [link](https://encrypted.google.com/)
 [htop](#htop) | [link](https://encrypted.google.com/)
+[iPython](#ipython) )  | [link](https://encrypted.google.com/)
 Nemo File Explorer | [link](https://encrypted.google.com/)
 Terminator | [link](https://encrypted.google.com/)
 Pulse Audio | [link](https://encrypted.google.com/)
@@ -103,4 +104,46 @@ Find all themes [here](https://github.com/robbyrussell/oh-my-zsh/wiki/External-t
 sudo apt-get install htop
 sudo apt install htop
 ```
+
+
+<a name="ipython"></a>
+# Install ipython and setup autoreload  
+```shell
+sudo apt-get install ipython
+```
+All the links you have above use commands within ipython. You should try editing your config file. Open up your terminal and complete the following steps.
+
+Step 1: Make sure you have the latest ipython version installed
+```python
+$ ipython --version
+```
+Step 2: find out where your config file is
+```python
+$ ipython profile create
+```
+Step 3: Open the config file with an editor based on the location of your config file. I use atom. For example:
+```python
+$ atom ~/.ipython/profile_default/ipython_config.py
+```
+Step 4: Look for the following lines in the config file:
+```python
+c.InteractiveShellApp.extensions = []
+```
+change it to:
+```python
+c.InteractiveShellApp.extensions = ['autoreload']
+```
+and then uncomment that line
+
+find:
+```python
+c.InteractiveShellApp.exec_lines = []
+```
+change it to:
+```python
+c.InteractiveShellApp.exec_lines = ['%load_ext autoreload', '%autoreload 2']
+```
+and then uncomment that line
+
+Done.
 

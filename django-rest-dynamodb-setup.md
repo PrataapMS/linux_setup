@@ -143,16 +143,16 @@ dynamodb = boto3.resource('dynamodb', region_name='us-west-2', endpoint_url="htt
 
 > Follow this for quicksetup from official documentation <http://pynamodb.readthedocs.io/en/latest/quickstart.html>
 
-> Quickly setup and checkout example programs here
-> 
+- Quickly setup and checkout example programs as shown below
+
 ```bash
 $ pip install pynamodb
-#### Getting the examples
+# Getting the examples
 $ git clone https://github.com/pynamodb/PynamoDB.git
-#### Configuring the examples
-####  Change the port mentioned in to model to what you are running the DynanoDB on
+# Configuring the examples
+# Change the port mentioned in to model to what you are running the DynanoDB on
 $ cd pynamodb/examples
-#### Running an example
+# Running an example
 $ python model.py
 ```
 
