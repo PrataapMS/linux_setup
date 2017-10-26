@@ -20,7 +20,7 @@ sudo apt install python-pip
 pip install --user pipenv
 ```
 
-==
+
 General development essentials
 ----
 ```bash
