@@ -4,6 +4,14 @@ Mount or unmount your drives.
 mount.sh 
 ----
 ```bash
+
+mkdir -p /media/foxtech/AudioData/
+mkdir -p /media/foxtech/Games/
+mkdir -p /media/foxtech/Shared/
+mkdir -p /media/foxtech/Video/
+mkdir -p /media/foxtech/Data/
+mkdir -p /media/foxtech/Misc/
+
 sudo mount -o ro /dev/sda1 /media/foxtech/AudioData/
 sudo mount -o ro /dev/sda2 /media/foxtech/Games/
 sudo mount -o ro /dev/sda5 /media/foxtech/Shared/
