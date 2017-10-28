@@ -1,32 +1,28 @@
 Mount or unmount your drives. 
 ===
+**Use this script incase you aren'e able to mount the disk using the GUI in file manager**
+***This script is also useful to force mount when windows didn't showdown and goes to hibernation mode. It can mount other partitions except the WinOS partition of the disk.***
+
+> There are two shell scripts.
+	1. Mount.sh -> creates a directory in media, then mounts the disk as read-only. Then it remounts as read-write.
+	2. Unmount.sh -> unmounts the drive
 
 mount.sh 
 ----
 ```bash
 
-mkdir -p /media/foxtech/AudioData/
-mkdir -p /media/foxtech/Games/
-mkdir -p /media/foxtech/Shared/
-mkdir -p /media/foxtech/Video/
-mkdir -p /media/foxtech/Data/
-mkdir -p /media/foxtech/Misc/
+sudo mkdir -p /media/user/data/
 
-sudo mount -o ro /dev/sda1 /media/foxtech/AudioData/
-sudo mount -o ro /dev/sda2 /media/foxtech/Games/
-sudo mount -o ro /dev/sda5 /media/foxtech/Shared/
-sudo mount -o ro /dev/sda6 /media/foxtech/Video/
-sudo mount -o ro /dev/sda7 /media/foxtech/Data/
-sudo mount -o ro /dev/sda8 /media/foxtech/Misc/
+sudo mount -o ro /dev/sda1 /media/user/data/
+
+sudo mount -o remount,rw /dev/sda1 /media/user/data/
+
 ```
 -----------------------------------------------------
 unmount.sh 
 ----
 ```bash
-sudo umount /media/foxtech/AudioData/
-sudo umount /media/foxtech/Games/
-sudo umount /media/foxtech/Shared/
-sudo umount /media/foxtech/Video/
-sudo umount /media/foxtech/Data/
-sudo umount /media/foxtech/Misc/
+
+sudo umount /media/user/data/
+
 ```
