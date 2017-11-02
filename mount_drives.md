@@ -2,7 +2,9 @@ Mount or unmount your drives.
 ===
 
 > **Shutdown windows using this command in cmd to automatically enable Linux to mount other drives. Use the below script incase you dont do this.** 
+```bash
 shutdown.exe /s /t 00
+```
 
 **Use this script incase you aren'e able to mount the disk using the GUI in file manager**
 
