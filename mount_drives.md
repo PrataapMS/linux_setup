@@ -1,8 +1,11 @@
 Mount or unmount your drives. 
 ===
-**Shutdown windows using this command in cmd to automatically enable Linux to mount other drives. Use the below script incase you dont do this.**
-> shutdown.exe /s /t 00
+
+> **Shutdown windows using this command in cmd to automatically enable Linux to mount other drives. Use the below script incase you dont do this.** 
+shutdown.exe /s /t 00
+
 **Use this script incase you aren'e able to mount the disk using the GUI in file manager**
+
 ***This script is also useful to force mount when windows didn't showdown and goes to hibernation mode. It can mount other partitions except the WinOS partition of the disk.***
 
 > There are two shell scripts.
