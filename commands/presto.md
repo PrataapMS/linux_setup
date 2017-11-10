@@ -1,10 +1,13 @@
 # Presto Commands
 
- - Download presto-cli-0.188-executable.jar, rename it to presto, make it executable with chmod +x, then run it:
- ```bash
- ./presto --server localhost:8080 --catalog hive --schema default
- ```
- - Run --help to get help parameters
+ - *Download presto-cli-0.188-executable.jar, rename it to presto, make it executable with chmod +x, then run it:*
+
+```bash
+ ./presto --server localhost:8080 --catalog mysql --schema default
+```
+  - *Notes:*
+	- __'--mysql' can be replaced with the data source like --hive__
+	- __Run --help to get help parameters__
 ---
 
 ### Querying MySQL
