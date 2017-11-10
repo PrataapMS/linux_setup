@@ -9,12 +9,19 @@
 
 Contents
 --
- - [General Package Installation Commands](Commands.md)
+
+###### Setup
+ - [General Packages Installation](general-packages.md)
  - [Development Environment](development_essentials.md) 
- - [Bash configurations](bash_config.md) 
  - [Setup Tensorflow](Tensorflow_setup.md) 
- - [Django Rest API setup](django-rest-dynamodb-setup.md) 
- - [Oh-My-Zsh configuration](zshrc_config.md) 
- - [Mount drives script](mount_drives.md) 
+ - [Django Rest API setup](django-rest-dynamodb-setup.md)
+
+###### Scripts
+ - [Bash configurations](scripts/bash_config.md) 
+ - [Oh-My-Zsh configuration](scripts/zshrc_config.md) 
+ - [Mount drives script](scripts/mount_drives.md) 
+
+###### Commands
+ - [Presto Commands](commands/presto.md)
 							
 _*Will be updated over time._
